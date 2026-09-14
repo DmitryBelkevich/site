@@ -5,7 +5,7 @@ export default class MainController {
   async init() {
     const mainView = new MainView();
 
-    const loader = HtmlLoader();
+    const loader = new HtmlLoader();
 
     mainView.setHeader("Header");
     mainView.setMain("Main");
