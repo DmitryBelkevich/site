@@ -1,5 +1,5 @@
 export default class FrontController {
-  consctuctor() {
+  constructor() {
     console.log(this);
   }
 }
