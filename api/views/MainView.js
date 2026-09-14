@@ -5,9 +5,15 @@ export default class MainView {
     this.header = document.createElement("header");
     this.main = document.createElement("main");
     this.footer = document.createElement("footer");
+    
+    document.body.append(
+      this.header,
+      this.main,
+      this.footer
+    );
+  }
 
-    // loader
-
+  async init() {
     const htmlLoader = new HtmlLoader();
 
     const header = "Header";
@@ -18,13 +24,6 @@ export default class MainView {
 
     const footer = await htmlLoader.load("./api/views/templates/footer.html");
     this.setFooter(footer);
-
-    // fill body
-    document.body.append(
-      this.header,
-      this.main,
-      this.footer
-    );
   }
 
   // *** setters ***
