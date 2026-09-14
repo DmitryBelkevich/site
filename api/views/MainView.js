@@ -18,13 +18,13 @@ export default class MainView {
     const htmlLoader = new HtmlLoader();
     const cssLoader = new CssLoader();
 
-    const header = await htmlLoader.load("./api/views/templates/header.html");
+    const header = await htmlLoader.load("../api/views/templates/header.html");
     this.setHeader(header);
 
-    const main = await htmlLoader.load("./api/views/templates/main.html");
+    const main = await htmlLoader.load("../api/views/templates/main.html");
     this.setMain(main);
 
-    const footer = await htmlLoader.load("./api/views/templates/footer.html");
+    const footer = await htmlLoader.load("../api/views/templates/footer.html");
     this.setFooter(footer);
   }
 
