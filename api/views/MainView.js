@@ -1,4 +1,5 @@
 import HtmlLoader from "../loaders/HtmlLoader.js";
+import CssLoader from "../loaders/CssLoader.js";
 
 export default class MainView {
   constructor() {
@@ -15,6 +16,7 @@ export default class MainView {
 
   async init() {
     const htmlLoader = new HtmlLoader();
+    const cssLoader = new CssLoader();
 
     const header = await htmlLoader.load("./api/views/templates/header.html");
     this.setHeader(header);
