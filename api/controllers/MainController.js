@@ -5,12 +5,14 @@ export default class MainController {
   async init() {
     const mainView = new MainView();
 
-    const loader = new HtmlLoader();
+    const htmlLoader = new HtmlLoader();
 
     mainView.setHeader("Header");
-    mainView.setMain("Main");
 
-    const data = await loader.load("./api/views/templates/footer.html");
+    const main = await htmlLoader.load("./api/views/templates/main.html");
+    mainView.setMain(main);
+
+    const footer = await htmlLoader.load("./api/views/templates/footer.html");
     mainView.setFooter(data);
   }
 }
