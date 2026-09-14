@@ -4,5 +4,14 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg">
   
-  <circle cx="25" cy="25" r="20" fill="black" />
+  <text
+    x="50"
+    y="100"
+    font-family="Verdana"
+    font-size="55"
+    fill="white"
+    stroke="black"
+    stroke-width="2">
+    City 17
+  </text>
 </svg>
