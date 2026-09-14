@@ -1,8 +1,16 @@
 export default class MainView {
   constructor() {
-    this.element = document.createElement("p");
-    this.element.textContent = "Main";
+    this.header = document.createElement("header");
     
-    document.body.append(this.element);
+    this.main = document.createElement("main");
+    this.main.textContent = "Main";
+
+    this.footer = document.createElement("footer");
+    
+    document.body.append(
+      this.header,
+      this.main,
+      this.footer
+    );
   }
 }
