@@ -1,5 +1,7 @@
+import FrontController from "/FrontController.js";
+
 function main() {
-  console.log("Hello World");
+  const frontController = new FrontController();
 }
 
 const app = main();
