@@ -3,6 +3,6 @@ export default class Dispatcher {
     const appName = "site";
     const routeName = request.slice(("/" + appName).length, -1);
 
-    console.log(routeName);
+    console.log("request: " + routeName);
   }
 }
