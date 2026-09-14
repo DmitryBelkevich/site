@@ -9,7 +9,6 @@ export default class MainView {
     this.main.textContent = "Main";
 
     this.footer = document.createElement("footer");
-    this.setFooter();
     
     document.body.append(
       this.header,
