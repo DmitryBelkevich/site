@@ -16,14 +16,14 @@ export default class MainView {
   // *** setters ***
 
   setHeader(html) {
-    this.header.textContent = html;
+    this.header.innerHTML = html;
   }
 
   setMain(html) {
-    this.main.textContent = html;
+    this.main.innerHTML = html;
   }
 
   setFooter(html) {
-    this.footer.textContent = html;
+    this.footer.innerHTML = html;
   }
 }
