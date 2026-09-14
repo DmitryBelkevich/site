@@ -11,6 +11,6 @@ export default class MainController {
     mainView.setMain("Main");
 
     const data = await loader.load("../views/templates/footer.html");
-    mainView.setFooter("Footer");
+    mainView.setFooter(data);
   }
 }
