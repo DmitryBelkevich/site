@@ -3,11 +3,7 @@ import HtmlLoader from "../loaders/HtmlLoader.js";
 export default class MainView {
   constructor() {
     this.header = document.createElement("header");
-    this.header.textContent = "Header";
-    
     this.main = document.createElement("main");
-    this.main.textContent = "Main";
-
     this.footer = document.createElement("footer");
     
     document.body.append(
@@ -18,6 +14,14 @@ export default class MainView {
   }
 
   // *** setters ***
+
+  setHeader(html) {
+    this.header.textContent = html;
+  }
+
+  setMain(html) {
+    this.main.textContent = html;
+  }
 
   setFooter(html) {
     this.footer.textContent = html;
