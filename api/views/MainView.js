@@ -1,4 +1,4 @@
-import HtmlLoader from "./footer.html";
+import HtmlLoader from "../loaders/HtmlLoader.js";
 
 export default class MainView {
   constructor() {
