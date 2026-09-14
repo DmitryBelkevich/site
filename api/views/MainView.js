@@ -1,3 +1,5 @@
+import HtmlLoader from "./footer.html";
+
 export default class MainView {
   constructor() {
     this.header = document.createElement("header");
