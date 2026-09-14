@@ -1,5 +1,5 @@
 import MainView from "../views/MainView.js";
-import MainView from "../loaders/HtmlLoader.js";
+import HtmlLoader from "../loaders/HtmlLoader.js";
 
 export default class MainController {
   async init() {
