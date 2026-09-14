@@ -5,7 +5,12 @@ export default class FrontController {
     this.dispatcher = new Dispatcher();
   }
 
+  isAuthenticUser() {
+    return true;
+  }
+
   handleRequest(request) {
-    this.dispatcher.dispatch(request);
+    if (this.isAuthenticUser())
+      this.dispatcher.dispatch(request);
   }
 }
