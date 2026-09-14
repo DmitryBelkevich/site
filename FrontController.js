@@ -1,5 +1,9 @@
 export default class FrontController {
   constructor() {
-    console.log(this);
+    
+  }
+
+  handleRequest(request) {
+    console.log("request: " + request);
   }
 }
