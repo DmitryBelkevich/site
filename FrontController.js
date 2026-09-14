@@ -1,9 +1,11 @@
+import Dispatcher from "./Dispatcher.js";
+
 export default class FrontController {
   constructor() {
-    
+    this.dispatcher = new Dispatcher();
   }
 
   handleRequest(request) {
-    console.log("request: " + request);
+    dispatcher.dispatch(request);
   }
 }
