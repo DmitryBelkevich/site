@@ -1,7 +1,7 @@
 import MainController from "../controllers/MainController.js";
 
 export default class Dispatcher {
-  #routes[];
+  #routes = [];
 
   constructor() {
     this.#routes[""] = new MainController();
