@@ -1,5 +1,8 @@
 export default class MainView {
   constructor() {
-    console.log(this);
+    this.element = document.createElement("p");
+    this.element.textContent = "Main";
+    
+    document.body.append(this.element);
   }
 }
