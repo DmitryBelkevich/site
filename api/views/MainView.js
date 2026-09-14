@@ -5,7 +5,21 @@ export default class MainView {
     this.header = document.createElement("header");
     this.main = document.createElement("main");
     this.footer = document.createElement("footer");
-    
+
+    // loader
+
+    const htmlLoader = new HtmlLoader();
+
+    const header = "Header";
+    this.setHeader(header);
+
+    const main = await htmlLoader.load("./api/views/templates/main.html");
+    this.setMain(main);
+
+    const footer = await htmlLoader.load("./api/views/templates/footer.html");
+    this.setFooter(footer);
+
+    // fill body
     document.body.append(
       this.header,
       this.main,
