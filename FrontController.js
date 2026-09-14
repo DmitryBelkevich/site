@@ -6,6 +6,6 @@ export default class FrontController {
   }
 
   handleRequest(request) {
-    dispatcher.dispatch(request);
+    this.dispatcher.dispatch(request);
   }
 }
