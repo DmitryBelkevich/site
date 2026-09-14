@@ -9,7 +9,7 @@ export default class MainController {
 
     mainView.setHeader("Header");
 
-    const main = await htmlLoader.load("./api/views/templates/main.htmls");
+    const main = await htmlLoader.load("./api/views/templates/main.html");
     mainView.setMain(main);
 
     const footer = await htmlLoader.load("./api/views/templates/footer.html");
