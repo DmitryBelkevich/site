@@ -9,12 +9,18 @@ export default class MainView {
     this.main.textContent = "Main";
 
     this.footer = document.createElement("footer");
-    this.footer.textContent = "Footer";
+    setFooter();
     
     document.body.append(
       this.header,
       this.main,
       this.footer
     );
+  }
+
+  // *** setters ***
+
+  setFooter(html) {
+    this.footer.textContent = html;
   }
 }
