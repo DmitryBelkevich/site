@@ -11,6 +11,7 @@ export default class Dispatcher {
     const appName = "site";
     const routeName = request.slice(("/" + appName).length, -1);
 
-    console.log("request: " + routeName);
+    const controller = this.#routes[routeName];
+    controller.init();
   }
 }
