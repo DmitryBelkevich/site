@@ -16,7 +16,7 @@ export default class MainView {
   async init() {
     const htmlLoader = new HtmlLoader();
 
-    const header = "Header";
+    const header = await htmlLoader.load("./api/views/templates/header.html");
     this.setHeader(header);
 
     const main = await htmlLoader.load("./api/views/templates/main.html");
