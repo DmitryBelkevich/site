@@ -6,7 +6,7 @@ export default class Dispatcher {
 
   constructor() {
     this.#routes[""] = new MainController();
-    this.#routes["/contacts"] = new MainController();
+    this.#routes["contacts"] = new MainController();
   }
   
   dispatch(request) {
