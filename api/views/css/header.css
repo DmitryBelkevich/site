@@ -2,7 +2,7 @@ header {
   border-bottom: 1px solid black;
 }
 
-header nav ul {
+header {
   display: flex;
   
   position: sticky;
