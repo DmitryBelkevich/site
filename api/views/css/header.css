@@ -12,7 +12,7 @@ header {
 header {
   nav {
     ul {
-      list-style: none;
+      /* list-style: none; */
       display: flex;
     }
   }
