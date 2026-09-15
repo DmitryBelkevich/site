@@ -1,4 +1,5 @@
 import MainController from "../controllers/MainController.js";
+import DemoController from "../controllers/DemoController.js";
 import ListController from "../controllers/ListController.js";
 import ContactsController from "../controllers/ContactsController.js";
 
@@ -7,6 +8,7 @@ export default class Dispatcher {
 
   constructor() {
     this.#routes[""] = new MainController();
+    this.#routes["demo"] = new DemoController();
     this.#routes["list"] = new ListController();
     this.#routes["contacts"] = new ContactsController();
   }
