@@ -13,6 +13,7 @@ header {
   nav {
     ul {
       display: flex;
+      margin-left: 20px;
     }
   }
 }
