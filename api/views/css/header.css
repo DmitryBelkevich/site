@@ -18,20 +18,10 @@ header {
 }
 
 header {
-  nav #menu {
+  nav {
     ul {
       li {
         margin: 0 20px;
-      }
-    }
-  }
-}
-
-header {
-  nav #socials {
-    ul {
-      li {
-        margin: 0 30px;
       }
     }
   }
