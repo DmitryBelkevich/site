@@ -19,6 +19,16 @@ header {
 }
 
 header {
+  nav {
+    ul {
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+header {
   #title {
     font-size: 18px;
     border-bottom: 1px solid black;
