@@ -1,5 +1,5 @@
 import MainController from "../controllers/MainController.js";
-import ContactsController from "../controllers/ListController.js";
+import ListController from "../controllers/ListController.js";
 import ContactsController from "../controllers/ContactsController.js";
 
 export default class Dispatcher {
