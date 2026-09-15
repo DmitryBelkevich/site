@@ -2,8 +2,6 @@ header {
   border-bottom: 1px solid black;
 }
 
-header {
-  #logo {
-    text-decoration: none;
-  }
+header nav ul {
+  display: flex;
 }
