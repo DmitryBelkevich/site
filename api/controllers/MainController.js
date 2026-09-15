@@ -1,6 +1,6 @@
 import MainView from "../views/MainView.js";
 
-export default class MainController {
+export class MainController {
   init() {
     const view = new MainView();
     view.init();
