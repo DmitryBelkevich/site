@@ -9,7 +9,7 @@ export default class Dispatcher {
     this.#routes["contacts"] = new ContactsController();
   }
   
-  dispatch(request) {console.log(request);
+  dispatch(request) {
     const appName = "site";
     const routeName = request.slice(("/" + appName).length);
 
