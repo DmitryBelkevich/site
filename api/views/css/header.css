@@ -18,7 +18,7 @@ header {
 }
 
 header {
-  nav#menu {
+  nav #menu {
     ul {
       li {
         margin: 0 20px;
@@ -28,7 +28,7 @@ header {
 }
 
 header {
-  nav#socials {
+  nav #socials {
     ul {
       li {
         margin: 0 30px;
