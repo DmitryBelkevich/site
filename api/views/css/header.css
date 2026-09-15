@@ -11,6 +11,6 @@ header {
   color: #f1f1f1;
 }
 
-header nav {
+header nav ul {
   display: flex;
 }
