@@ -22,7 +22,7 @@ export default class ContactsView {
     cssLoader.load("./api/views/css/header.css");
     this.setHeader(header);
 
-    const main = await htmlLoader.load("./api/views/templates/main.html");
+    const main = await htmlLoader.load("./api/views/templates/contacts/main.html");
     cssLoader.load("./api/views/css/main.css");
     this.setMain(main);
 
