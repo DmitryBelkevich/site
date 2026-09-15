@@ -23,7 +23,7 @@ export default class MainView {
     this.setHeader(header);
 
     const main = await htmlLoader.load("./api/views/templates/main.html");
-    cssLoader.load("./api/views/css/main.css");
+    cssLoader.load("./api/views/css/main/main.css");
     this.setMain(main);
 
     const footer = await htmlLoader.load("./api/views/templates/footer.html");
