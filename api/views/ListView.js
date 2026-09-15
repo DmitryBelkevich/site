@@ -22,7 +22,7 @@ export default class ListView {
     cssLoader.load("./api/views/css/header.css");
     this.setHeader(header);
 
-    const main = await htmlLoader.load("./api/views/templates/main.html");
+    const main = await htmlLoader.load("./api/views/templates/list/main.html");
     cssLoader.load("./api/views/css/list/main.css");
     this.setMain(main);
 
