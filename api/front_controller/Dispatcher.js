@@ -13,7 +13,7 @@ export default class Dispatcher {
     const appName = "site";
     const routeName = request.slice(("/" + appName).length, -1);
 
-    const controller = this.#routes[routeName];
+    const controller = this.#routes[routeName];console.log(controller);
     controller.init();
   }
 }
