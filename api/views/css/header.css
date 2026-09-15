@@ -28,6 +28,16 @@ header {
 }
 
 header {
+  .socials {
+    ul {
+      li {
+        margin: 0 30px;
+      }
+    }
+  }
+}
+
+header {
   #title {
     border-bottom: 1px solid black;
     height: 50px;
