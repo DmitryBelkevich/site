@@ -18,16 +18,16 @@ export default class MainView {
     const htmlLoader = new HtmlLoader();
     const cssLoader = new CssLoader();
 
-    const header = await htmlLoader.load("./api/views/templates/header.html");
-    cssLoader.load("./api/views/css/header.css");
+    const header = await htmlLoader.load("./app/views/templates/header.html");
+    cssLoader.load("./app/views/css/header.css");
     this.setHeader(header);
 
-    const main = await htmlLoader.load("./api/views/templates/main/main.html");
-    cssLoader.load("./api/views/css/main/main.css");
+    const main = await htmlLoader.load("./app/views/templates/main/main.html");
+    cssLoader.load("./app/views/css/main/main.css");
     this.setMain(main);
 
-    const footer = await htmlLoader.load("./api/views/templates/footer.html");
-    cssLoader.load("./api/views/css/footer.css");
+    const footer = await htmlLoader.load("./app/views/templates/footer.html");
+    cssLoader.load("./app/views/css/footer.css");
     this.setFooter(footer);
   }
 
