@@ -6,4 +6,4 @@ function main() {
   frontController.handleRequest(window.location.pathname);
 }
 
-const app = main( );
+const app = main();
